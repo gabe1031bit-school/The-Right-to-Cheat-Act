@@ -6,7 +6,29 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Proxy & UB Hub</title>
 <!-- Load AuthPro session script -->
+<script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/13.1.0/firebase-app.js";
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/13.1.0/firebase-analytics.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
 
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  const firebaseConfig = {
+    apiKey: "AIzaSyBZz6EVhIe9tgwH-m02g3bLFvQN3x_Vgfs",
+    authDomain: "trtcact.firebaseapp.com",
+    projectId: "trtcact",
+    storageBucket: "trtcact.firebasestorage.app",
+    messagingSenderId: "172103014029",
+    appId: "1:172103014029:web:d39da3f1e4b5d3e54634c4",
+    measurementId: "G-VQL7CT92FH"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
+</script>
 
   <style>
     :root {
